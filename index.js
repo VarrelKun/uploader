@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.static("public"));
 
 // Buat folder tmp jika belum ada
-const tmpDir = "/tmp/uploads";
+const tmpDir = "/tmp";
 if (!fs.existsSync(tmpDir)) {
     fs.mkdirSync(tmpDir, { recursive: true });
 }
